@@ -33,6 +33,7 @@ def uploader():
         
 @app.route('/uploadfile', methods=['GET','POST'])
 def uploadfile():
+    #upload a file
     if request.method=='POST':
         f=request.files['file']
         
